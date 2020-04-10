@@ -1,0 +1,20 @@
+{
+  "name": "Estudo site 02",
+  "homepage": "https://github.com/thubarone/estudo-website-02",
+  "authors": [
+    "tubarone <tubarone@yahoo.com.br>"
+  ],
+  "description": "Estudo site 02",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}

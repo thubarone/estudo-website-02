@@ -1,0 +1,26 @@
+{
+  "name": "estudo-site-02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thubarone/estudo-website-02.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thubarone/estudo-website-02/issues"
+  },
+  "homepage": "https://github.com/thubarone/estudo-website-02#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "resolve-url": "^0.2.1",
+    "urix": "^0.1.0"
+  }
+}
