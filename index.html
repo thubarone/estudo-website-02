@@ -11,86 +11,116 @@
   <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-  <header>
-    <div class="container">
 
-      <div class="logo">
-        <img src="images/logo-tag-topo.svg" alt="Logo Topo Tag">
-      </div>
+  <nav class="menu-responsivo">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
 
-      <div class="links">
-        <nav>
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="portfolio.html">Portfólio</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
 
-        <ul class="social">
-          <li>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-github"></i></a>
-          </li>
-        </ul>
-      </div>
-
-      <h1><strong>Therafin</strong> M. <strong>Sotta</strong></h1>
-      <p>// Creative Things //</p>
-
-    </div>
-
-  </header>
-
-  <main>
-    <section class="sobre">
+  <div class="layout">
+    <header>
       <div class="container">
-        <div class="itens">
-          <div class="foto">
-            <img src="images/foto-tag-miolo.png" alt="Foto TAG">
-          </div>
 
-          <div class="icone-lapis">
-            <i class="fas fa-pencil-alt"></i>
-          </div>
-
-          <div class="icone-codigo">
-            <i class="fas fa-code"></i>
-          </div>
-
-          <div class="icone-coracao">
-            <i class="far fa-heart"></i>
-          </div>
-
-          <div class="icone-compartilhar">
-            <i class="fas fa-share-alt"></i>
-          </div>
-
+        <div class="logo">
+          <img src="images/logo-tag-topo.svg" alt="Logo Topo Tag">
         </div>
 
-        <div class="textos">
-          <p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Iste quisquam minima, eveniet nihil, eligendi iure voluptate pariatur, vel ut qui eum amet. Fugiat et eveniet, quae quidem praesentium accusamus ex?</p>
+        <div class="links">
+          <nav>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="portfolio.html">Portfólio</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
 
-          <a href="#" class="botao medio"><i class="far fa-eye"></i> Continue Lendo</a>
+          <a class="toggle" href="javascript:;">
+            <span></span>
+            <span></span>
+            <span></span>
+
+          </a>
+
+          <ul class="social">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </li>
+          </ul>
         </div>
+
+        <h1><strong>Therafin</strong> M. <strong>Sotta</strong></h1>
+        <p>// Creative Things //</p>
 
       </div>
-    </section>
-  </main>
 
-  <footer>
-    <div class="logo-rodape">
-      <a href="index.html">
-        <img src="images/logo-tag-rodape.svg" alt="Logo TAG Rodapé">
-      </a>
-      <p>2020 Todos os Direitos Reservados</p>
-    </div>
+    </header>
 
-  </footer>
+    <main>
+      <section class="sobre">
+        <div class="container">
+          <div class="itens">
+            <div class="foto">
+              <img src="images/foto-tag-miolo.png" alt="Foto TAG">
+            </div>
 
+            <div class="icone-lapis">
+              <i class="fas fa-pencil-alt"></i>
+            </div>
+
+            <div class="icone-codigo">
+              <i class="fas fa-code"></i>
+            </div>
+
+            <div class="icone-coracao">
+              <i class="far fa-heart"></i>
+            </div>
+
+            <div class="icone-compartilhar">
+              <i class="fas fa-share-alt"></i>
+            </div>
+
+          </div>
+
+          <div class="textos">
+            <p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Iste quisquam minima, eveniet nihil, eligendi iure voluptate pariatur, vel ut qui eum amet. Fugiat et eveniet, quae quidem praesentium accusamus ex?</p>
+
+            <a href="#" class="botao medio"><i class="far fa-eye"></i> Continue Lendo</a>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="logo-rodape">
+        <a href="index.html">
+          <img src="images/logo-tag-rodape.svg" alt="Logo TAG Rodapé">
+        </a>
+        <p>2020 Todos os Direitos Reservados</p>
+      </div>
+
+    </footer>
+  </div>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $('.toggle').click(function(){
+        $('.layout').toggleClass('ativo');
+        $('.menu-responsivo').toggleClass('ativo');
+        $(this).toggleClass('ativo');
+      });
+    });
+  </script>
 
 </body>
 </html>
